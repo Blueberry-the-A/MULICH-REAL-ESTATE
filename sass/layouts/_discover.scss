@@ -1,0 +1,80 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+
+.property{
+    padding-top:80px;
+    padding-bottom:120px;
+}
+
+@include title_style;
+
+.property__info{
+    font-family: $secondFont;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 117%;
+    letter-spacing: 0.01em;
+    color: #054457;
+    margin-top:15px;
+    margin-bottom:35px;
+}
+
+.property-inner__wrapper{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom:50px;
+}
+
+.property__text{
+    font-family: $firstFont;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+    color: #73788c;
+    width:492px;
+}
+
+@include learn_more;
+
+.about-houses_list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.house_card{
+    padding:20px;
+}
+
+.house_card__title{
+    font-family: $firstFont;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133%;
+    color: #1f2744;
+}
+
+.house_card__location{
+    font-family: $firstFont;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+    color: #a6a6a6;
+}
+
+.house_card__description{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.house_card__price{
+    font-family: $firstFont;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133%;
+    color: $hoverColor;
+}
+

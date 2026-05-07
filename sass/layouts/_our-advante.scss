@@ -1,0 +1,49 @@
+@use "../utils/variables" as *; 
+
+.about{
+    padding-top:80px;
+    padding-bottom:100px;
+    background-color: $sections_bg;
+}
+
+.about__info{
+    width:436px;
+    font-family: $secondFont;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 117%;
+    letter-spacing: 0.01em;
+    color: #054457;
+}
+
+.our-advante__list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.our-advante__item{
+    width:376px;
+    padding:20px;
+}
+
+.our-advante__title{
+    font-family: $firstFont;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 136%;
+    letter-spacing: 0.02em;
+    color: #054457;
+    margin:16px 0;
+}
+
+.our-advante__description{
+    font-family: $firstFont;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+    letter-spacing: 0.03em;
+    color: #73788c;
+}

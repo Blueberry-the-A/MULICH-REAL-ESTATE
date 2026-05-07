@@ -1,0 +1,5 @@
+@use "../utils/variables"  as *;
+
+.hero{
+    background-color: $sections_bg;
+}
