@@ -1,0 +1,80 @@
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+.customers{
+    padding: 40px 0;
+}
+
+.customers__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:48px;
+    margin-top: 16px;
+}
+
+@include learn_more;
+
+.customers__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.customers__item{
+    width:376px;
+    height: 350px;
+    padding:24px;
+    border: 1px solid #dedcda;
+}
+
+.customers__comma{
+    margin-bottom:24px;
+}
+
+.customers_title{
+    margin-bottom: 16px;
+    font-family: $firstFont;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: $secondTextColor;
+}
+
+.customers_comment{
+    margin-bottom: 24px;
+    font-family: $firstFont;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $secondTextColor;
+}
+
+.customers_list__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.customers__avatar{
+    border-radius: 50%;
+}
+
+.customers_name{
+    font-family: $firstFont;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 163%;
+    letter-spacing: 0.03em;
+    color: #0b2e29;
+}
+
+.customers_position{
+    font-family: $firstFont;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 183%;
+    letter-spacing: 0.04em;
+    color: #767676;
+}
+

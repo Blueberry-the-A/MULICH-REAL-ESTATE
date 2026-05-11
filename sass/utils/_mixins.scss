@@ -15,6 +15,17 @@
 }
 }
 
+@mixin section_info {
+.section_info{
+    font-family: $secondFont;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 117%;
+    letter-spacing: 0.01em;
+    color: #054457;
+}
+}   
+
 @mixin learn_more{
 .learn-more_button{
     display:flex;
@@ -26,9 +37,14 @@
     line-height: 144%;
     letter-spacing: 0.03em;
     color: $hoverColor;
+    transition: scale 0.4s ease-out;
 }
 .arrow-icon{
     border-radius: 50%;
     box-shadow: 0 0 20px 0 rgba(105, 185, 157, 0.58);
+}
+
+.learn-more_button:hover{
+    scale:1.05;
 }
 }

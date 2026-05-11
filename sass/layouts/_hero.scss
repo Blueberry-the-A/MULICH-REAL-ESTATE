@@ -3,3 +3,14 @@
 .hero{
     background-color: $sections_bg;
 }
+
+.hero__image{
+    position:relative;
+    left: 27.5%;
+    transform: translateX(27.5%);
+}
+
+.hero__wrapper{
+    position:absolute;
+    top:65px;
+}

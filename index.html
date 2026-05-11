@@ -57,7 +57,7 @@
           <img class="hero__image" src="./img/hero-section_house.webp" alt="Photo of house" width="806" height="761">
           <div class="hero__wrapper">
             <p class="title">REAL ESTATE</p>
-            <h1 class="hero_info">Let's hunt for your dream residence</h1>
+            <h1 class="section_info hero__info">Let's hunt for your dream residence</h1>
             <p class="hero__text">
               Explore our range of beautiful properties with the addition of separate accommodation suitable for you.
             </p>
@@ -107,7 +107,7 @@
       <section class="property">
         <div class="container">
           <p class="title">DISCOVER</p>
-          <h2 class="property__info" id="Property">Best recomendation</h2>
+          <h2 class="section_info property__info" id="Property">Best recomendation</h2>
           <div class="property-inner__wrapper">
             <p class="property__text">Discover our exclusive selection of the finest one-of-a-kind luxury properties architectural masterpieces.</p>
             <a href="#" class="learn-more_button">Learn more <img class="arrow-icon" src="./img/arrow_icon.svg" alt="arrow icon" width="24" height="24"></a>
@@ -119,7 +119,7 @@
               <h4 class="house_card__location">Bogor, Jawa Barat</h4>
               <div class="house_card__description">
                 <p class="house_card__price">$25,000</p>
-                <p class="house_card__area">360m<sup>2</sup> <span>Living Area</span></p>
+                <p class="house_card__area">360m<sup>2</sup> <span class="living-are__info">Living Area</span></p>
               </div>
               <a href="#" class="send-inquiry_button">Send Inquiry</a>
             </li>
@@ -129,7 +129,7 @@
               <h4 class="house_card__location">Bogor, Jawa Barat</h4>
               <div class="house_card__description"> 
                 <p class="house_card__price">$35,000</p>
-                <p class="house_card__area">360m<sup>2</sup> <span>Living Area</span></p>
+                <p class="house_card__area">360m<sup>2</sup> <span class="living-are__info">Living Area</span></p>
               </div>
               <a href="#" class="send-inquiry_button">Send Inquiry</a>
             </li>
@@ -139,7 +139,7 @@
               <h4 class="house_card__location">Bogor, Jawa Barat</h4>
               <div class="house_card__description">
                 <p class="house_card__price">$40,000</p>
-                <p class="house_card__area">360m<sup>2</sup> <span>Living Area</span></p>
+                <p class="house_card__area">360m<sup>2</sup> <span class="living-are__info">Living Area</span></p>
               </div>
               <a href="#" class="send-inquiry_button">Send Inquiry</a>
             </li>
@@ -149,7 +149,7 @@
       <section class="about">
         <div class="container">
           <p class="title">OUR ADVANTE</p>
-          <h2 class="about__info" id="About">Giving you peace of mind</h2>
+          <h2 class="section_info about__info" id="About">Giving you peace of mind</h2>
           <ul class="our-advante__list">
             <li class="our-advante__item">
               <img class="our-advante__icons" src="./img/heart_icon.svg" alt="Heart icon" width="54" height="54">
@@ -186,57 +186,79 @@
       </section>
       <section class="service">
         <div class="container">
-          <img src="./img/about_house.jpg" alt="photo of interior" width="609" height="475">
-          <div class="about-img_wrapper">
-            <img src="./img/tick_square_icon.svg" alt="tick square icon" width="32" height="32">
-            <p>4.8</p>
-            <img src="./img/stars_rating.svg" alt="Five stars rating" width="106" height="18">
-            <p>Trusted on</p>
-            <p>500+ reviews</p>
-          </div>
-          <div>
-            <p>250+</p>
-            <p>Property Sale</p>
-            <p>550+</p>
-            <p>Apartment Rent</p>
-          </div>
-          <div class="about-text_wrapper">
-            <p class="title">About us</p>
-            <h2 class="about__info">How much is your property worth now?</h2>
-            <p>We have built our reputation as true local area experts. We have gained more knowledge about buyer interests, our neighborhood and the market than any other brand because we live locally and work for local people.</p>
-            <a class="learn-more_button">Learn more</a>
+          <div class="service__wrapper">
+            <div class="service__image_wrapper">
+              <img class="service_img" src="./img/about_house.jpg" alt="photo of interior" width="609" height="475">
+                <div class="about-img_wrapper">
+                <img class="tick_square" src="./img/tick_square_icon.svg" alt="tick square icon" width="32" height="32">
+                <p class="rating">4.8</p>
+                <img class="rating_stars" src="./img/stars_rating.svg" alt="Five stars rating" width="106" height="18">
+                <p class="trusted_on">Trusted on</p>
+                <p class="reviews">500+ reviews</p>
+              </div>
+              <div class="about-img_second_wrapper">
+              <div class="sale__list">
+                  <p class="count">250+</p>   
+                  <p class="sale_type">Property Sale</p>
+              </div>
+              <div class="sale__list">
+                  <p class="count">550+</p>
+                  <p class="sale_type">Apartment Rent</p>
+              </div>               
+              </div>
+            </div>
+            <div class="about-text_wrapper">
+              <p class="title">About us</p>
+              <h2 class="section_info service__info">How much is your property worth now?</h2>
+              <p class="service_description">We have built our reputation as true local area experts. We have gained more knowledge about buyer interests, our neighborhood and the market than any other brand because we live locally and work for local people.</p>
+              <a class="learn-more_link">Learn more</a>
+            </div>
           </div>
         </div>
       </section>
       <section class="customers">
         <div class="container">
           <p class="title">CUSTOMER TESTIMONIALS</p>
-          <h2 class="customers__info">People say about us?</h2>
-          <a href="#" class="learn-more_button">Learn more <img src="./img/arrow_icon.svg" alt="arrow icon" width="24" height="24"></a>
-          <ul>
-            <li>
-              <img src="./img/commas.svg" alt="" width="42" height="34">
-              <h3>It proved to be exactly the kind of home we wanted.</h3>
-              <p>We wish to express our thanks for your hard work in finding us a temporary home, which proved to be exactly what we wanted.</p>
-              <img src="./img/comment_avatar.jpg" alt="avatar" width="48" height="48">
-              <h4>Jaydon Aminoff</h4>
-              <p>UX Designer</p>
+          <div class="customers__wrapper">
+            <h2 class="section_info customers__info">People say about us?</h2>
+            <a href="#" class="learn-more_button">Learn more <img src="./img/arrow_icon.svg" alt="arrow icon" width="24" height="24"></a>
+          </div>
+          <ul class="customers__list">
+            <li class="customers__item">
+              <img class="customers__comma" src="./img/commas.svg" alt="" width="42" height="34">
+              <h3 class="customers_title">It proved to be exactly the kind of home we wanted.</h3>
+              <p class="customers_comment">We wish to express our thanks for your hard work in finding us a temporary home, which proved to be exactly what we wanted.</p>
+              <div class="customers_list__wrapper">
+                <img class="customers__avatar" src="./img/comment_avatar.jpg" alt="avatar" width="48" height="48">
+                <div class="customers__info">
+                  <h4 class="customers_name">Jaydon Aminoff</h4>
+                  <p class="customers_position">UX Designer</p>
+                </div>
+              </div>
             </li>
-            <li>
-              <img src="./img/commas.svg" alt="" width="42" height="34">
-              <h3>Nobody knows Portland and the peninsula better than David.</h3>
-              <p>My wife and I had a dream of downsizing from our house in Cape Elizabeth into a small condo closer to where we work and play in Portland. </p>
-              <img src="./img/comment_avatar2.jpg" alt="avatar" width="48" height="48">
-              <h4>Alfredo Donin</h4>
-              <p>UI Designer</p>
+            <li class="customers__item">
+              <img class="customers__comma" src="./img/commas.svg" alt="" width="42" height="34">
+              <h3 class="customers_title">Nobody knows Portland and the peninsula better than David.</h3>
+              <p class="customers_comment">My wife and I had a dream of downsizing from our house in Cape Elizabeth into a small condo closer to where we work and play in Portland. </p>
+              <div class="customers_list__wrapper">
+                <img class="customers__avatar" src="./img/comment_avatar2.jpg" alt="avatar" width="48" height="48">
+                <div class="customers__info">
+                  <h4 class="customers_name">Alfredo Donin</h4>
+                  <p class="customers_position">UI Designer</p>
+                </div>
+              </div>
             </li>
-            <li>
-              <img src="./img/commas.svg" alt="" width="42" height="34">
-              <h3>He keeps his client’s best interests in sharp focus</h3>
-              <p>After working with David to sell my home in 2013, I was convinced that he’s the only realtor I’ll ever need. Since then, I’ve bought two properties and sold one.</p>
-              <img src="./img/comment_avatar3.jpg" alt="avatar" width="48" height="48">
-              <h4>Makenna Korsgaard</h4>
-              <p>UX Researcher</p>
+            <li class="customers__item">
+              <img class="customers__comma" src="./img/commas.svg" alt="" width="42" height="34">
+              <h3 class="customers_title">He keeps his client’s best interests in sharp focus</h3>
+              <p class="customers_comment">After working with David to sell my home in 2013, I was convinced that he’s the only realtor I’ll ever need. Since then, I’ve bought two properties and sold one.</p>
+              <div class="customers_list__wrapper">
+                <img class="customers__avatar" src="./img/comment_avatar3.jpg" alt="avatar" width="48" height="48">
+                <div class="customers__info">
+                  <h4 class="customers_name">Makenna Korsgaard</h4>
+                  <p class="customers_position">UX Researcher</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -247,8 +269,8 @@
         <div class="footer_wrapper">
           <a class="logo" href="./"><img src="./img/logo.svg" alt="Logo"></a>
             <h2>We have built our reputation as true local area experts.</h2>
-            <h3>Newsletter</h3>
             <form action="" class="form">
+              <label for="email">Newsletter</label>
               <div>
                 <input type="email" name="email" id="email" placeholder="Input your email" required>
               </div>

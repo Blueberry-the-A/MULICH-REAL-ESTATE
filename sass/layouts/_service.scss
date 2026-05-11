@@ -1,0 +1,137 @@
+@use "../utils/variables"  as *;
+
+.service{
+    padding:216px 0 120px;
+    position:relative;
+}
+
+.service__wrapper{
+    display: flex;
+    align-items: center;
+    gap:56px;
+}
+
+.service__image_wrapper{
+    position: relative;
+}
+
+.about-img_wrapper{
+    width: 174px;
+    height: 236px;
+    position:absolute;
+    top:-96px;
+    left:96px;
+    box-shadow: 35px 35px 65px 0 rgba(146, 106, 120, 0.16);
+    background: #fefeff;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tick_square{
+    position:absolute;
+    z-index: 1;
+    top:-16px;
+}
+
+.rating{
+    margin-bottom:8px;
+    margin-top: 16px;
+    font-family:$firstFont;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 111%;
+    color: #054457;
+}
+
+.rating_stars{
+    margin-bottom: 16px;
+}
+
+.trusted_on{
+    margin-bottom: 3px;
+    font-family:$firstFont;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $lightGrayTextColor;
+}
+
+.reviews{
+    font-family: $firstFont;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #054457;
+    margin-bottom:32px;
+}
+
+.about-img_second_wrapper{   
+    padding: 12px 32px; 
+    width: 515px;
+    height: 82px;
+    position:absolute;
+    bottom:0;
+    right:0;
+    background: #fff;
+    display:flex;
+    align-items: center;
+    gap:32px;
+}
+
+.sale__list{
+    display: flex;
+    align-items: center;
+}
+
+.count{
+    font-family: $firstFont;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 121%;
+    color: #054457;
+}
+
+.sale_type{
+    font-family: $firstFont;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+    color: $lightGrayTextColor;
+}
+
+.service__info{
+    margin: 16px 0;
+}
+
+.service_description{
+    font-family: $firstFont;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+    color: #73788c;
+    margin-bottom:48px;
+}
+
+.learn-more_link{
+    padding: 18px 48px;
+    width: 188px;
+    height: 60px;
+    background-color: $hoverColor;
+    box-shadow: 24px 24px 65px 0 rgba(81, 140, 119, 0.24);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $firstFont;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fefeff;
+    transition: background-color 0.4s ease-out, scale 0.4s ease-out, color 0.4s ease-out;
+}
+
+.learn-more_link:hover{
+    color: $hoverColor;
+    scale:1.05;
+    background-color: #fff;
+}
