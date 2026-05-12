@@ -295,6 +295,18 @@ html {
   margin-bottom: 48px;
   margin-top: 16px;
 }
+@media screen and (min-width: 480px) {
+  .customers__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__wrapper {
+    flex-direction: row;
+  }
+}
 
 .learn-more_button {
   display: flex;
@@ -322,6 +334,17 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (min-width: 480px) {
+  .customers__list {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .customers__list {
+    flex-direction: row;
+  }
 }
 
 .customers__item {
@@ -420,6 +443,20 @@ html {
   align-items: center;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 480px) {
+  .property-inner__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .property-inner__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 .property__text {
   font-family: "Poppins", sans-serif;
@@ -428,6 +465,17 @@ html {
   line-height: 163%;
   color: #73788c;
   width: 492px;
+}
+@media screen and (min-width: 480px) {
+  .property__text {
+    width: 100%;
+    max-width: 470px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .property__text {
+    width: 492px;
+  }
 }
 
 .learn-more_button {
@@ -456,6 +504,17 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (min-width: 480px) {
+  .about-houses_list {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .about-houses_list {
+    flex-direction: row;
+  }
 }
 
 .house_card {
@@ -557,6 +616,16 @@ html {
   gap: 30px;
   flex-wrap: wrap;
   margin-top: 40px;
+}
+@media screen and (min-width: 480px) {
+  .our-advante__list {
+    flex: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .our-advante__list {
+    flex-direction: row;
+  }
 }
 
 .our-advante__item {
@@ -730,6 +799,16 @@ html {
   gap: 214px;
   justify-content: center;
 }
+@media screen and (min-width: 480px) {
+  .footer_wrapper {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer_wrapper {
+    flex-direction: row;
+  }
+}
 
 .footer_info__wrapper {
   width: 351px;
@@ -797,10 +876,20 @@ html {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  gap: 90px;
+}
+@media screen and (min-width: 480px) {
+  .footer__navigation {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__navigation {
+    flex-direction: row;
+  }
 }
 
 .footer__service {
-  margin-right: 80px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -836,7 +925,6 @@ html {
 }
 
 .footer__community {
-  margin-right: 137px;
   display: flex;
   flex-direction: column;
   gap: 16px;

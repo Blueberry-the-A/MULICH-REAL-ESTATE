@@ -11,6 +11,15 @@
     align-items: center;
     gap:214px;
     justify-content: center;
+
+    @media screen and (min-width: 480px) {
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+    }
+
 }
 
 .footer_info__wrapper{
@@ -79,10 +88,18 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    gap:90px;
+
+    @media screen and (min-width: 480px) {
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
 }
 
 .footer__service{
-    margin-right:80px;
     display:flex;
     flex-direction: column;
     gap:16px;
@@ -118,7 +135,6 @@
 }
 
 .footer__community{
-    margin-right:137px;
     display:flex;
     flex-direction: column;
     gap:16px;
