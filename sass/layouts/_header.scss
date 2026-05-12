@@ -14,40 +14,89 @@
 .navigation {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 32px;
 }
 
 .nav-list{
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 48px;
 }
 
 .nav-list__link {
-    font-family: "Poppins", sans-serif;
+    display:inline-block;
+    font-family: $firstFont;
     font-weight: 500;
     font-size: 18px;
     line-height: 144%;
     letter-spacing: 0.03em;
     color: $textColor;
-    transition: color 0.4s ease-out;
+    transition: color 0.4s ease-out, transform 0.4s ease-out;
+    position:relative;
+    padding-bottom: 14px;
 }
 
 .nav-list__link:hover {
     color: $hoverColor;
+    transform: translateY(-8px); 
 }
+
+.nav-list__link::before{
+    content: "";
+    background-color:$hoverColor;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scale(0);
+    transition: transform 0.4s ease-out;
+}
+
+.nav-list__link:hover::before{
+   content: "";
+   transform: translateX(-50%) scale(1);
+}
+
 
 .profile-list{
     display: flex;
     align-items: center;
-    gap:15px;
+    gap:8px;
+}
+
+.sing-in__link{
+    font-family: $firstFont;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: $hoverColor;
+    padding: 16px 48px 15px;
+    width: 151px;
+    height: 55px;
+    background: $sections_bg;
+    transition: color 0.4s ease-out,background-color 0.4s ease-out;
+}
+
+.sing-in__link:hover{
+    color: $sections_bg;
+    background-color: $hoverColor;
 }
 
 .login__link{
-    font-family: "Poppins", sans-serif;
+    padding: 16px 48px 15px;
+    width: 139px;
+    height: 55px;
+    font-family: $firstFont;
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     color: #fff;
     background-color: $hoverColor;
+    transition: color 0.4s ease-out;
+}
+
+.login__link:hover{
+    color: $lightGrayTextColor;
 }

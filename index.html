@@ -61,44 +61,44 @@
             <p class="hero__text">
               Explore our range of beautiful properties with the addition of separate accommodation suitable for you.
             </p>
-            <ul>
-              <li>
-                <button type="button">Buy</button>
+            <ul class="hero_button__list">
+              <li class="hero_button__item">
+                <button class="hero_button" type="button">Buy</button>
               </li>
-              <li>
-                <button type="button">Rent</button>
+              <li class="hero_button__item">
+                <button class="hero_button" type="button">Rent</button>
               </li>
             </ul>
-            <form action="" class="form">
-              <div>
-                <label for="location">Location</label>
-                <select name="location" id="location">
-                  <option value="bogor,jawa barat">Bogor, Jawa Barat</option>
-                  <option value="kyiv,ukraine">Kyiv, Ukraine</option>
-                  <option value="new-york">New York</option>
-                  <option value="los-angeles">Los Angeles</option>
-                  <option value="chicago">Chicago</option>
+            <form action="" class="hero_form">
+              <div class="location_div">
+                <label class="location_label" for="location">Location</label>
+                <select class="hero_select" name="location" id="location">
+                  <option class="hero_options" value="bogor,jawa barat">Bogor, Jawa Barat</option>
+                  <option class="hero_options" value="kyiv,ukraine">Kyiv, Ukraine</option>
+                  <option class="hero_options" value="new-york">New York</option>
+                  <option class="hero_options" value="los-angeles">Los Angeles</option>
+                  <option class="hero_options" value="chicago">Chicago</option>
                 </select>
                 </div>
-                <div>
-                <label for="type">Type</label>
-                <select name="type" id="type">
-                  <option value="home">Home</option>
-                  <option value="house">House</option>
-                  <option value="apartment">Apartment</option>
+                <div class="type_div">
+                <label class="type_label" for="type">Type</label>
+                <select class="hero_select" name="type" id="type">
+                  <option class="hero_options" value="home">Home</option>
+                  <option class="hero_options" value="house">House</option>
+                  <option class="hero_options" value="apartment">Apartment</option>
                 </select> 
               </div>
-              <div>
-                <label for="Price">Price</label>
-                <select name="Price" id="Price">
-                  <option value="200-350">$200 - $350</option>
-                  <option value="350-500">$350 - $500</option>
-                  <option value="500-1000">$500 - $1000</option>
-                  <option value="1000+">$1000+</option>
+              <div class="price_div">
+                <label class="price_label" for="Price">Price</label>
+                <select class="hero_select" name="Price" id="Price">
+                  <option class="hero_options" value="200-350">$200 - $350</option>
+                  <option class="hero_options" value="350-500">$350 - $500</option>
+                  <option class="hero_options" value="500-1000">$500 - $1000</option>
+                  <option class="hero_options" value="1000+">$1000+</option>
                 </select>
               </div>
-              <div>
-                <button type="submit" class="submit_button">Search</button>
+              <div class="submit_div">
+                <button type="submit" class="hero_submit_button">Search</button>
               </div>
               </form>
           </div>
@@ -267,68 +267,68 @@
     <footer class="footer_class">
       <div class="container">
         <div class="footer_wrapper">
-          <a class="logo" href="./"><img src="./img/logo.svg" alt="Logo"></a>
-            <h2>We have built our reputation as true local area experts.</h2>
+          <div class="footer_info__wrapper">
+            <a class="logo" href="./"><img src="./img/logo.svg" alt="Logo" width="115" height="40"></a>
+            <h2 class="footer__info">We have built our reputation as true local area experts.</h2>
             <form action="" class="form">
-              <label for="email">Newsletter</label>
-              <div>
-                <input type="email" name="email" id="email" placeholder="Input your email" required>
-              </div>
-              <div>
+              <label for="email" class="email__label">Newsletter</label>
+              <div class="email__form">
+                <input class="email__input" type="email" name="email" id="email" placeholder="Input your email" required>              
                 <button type="submit" class="submit_button">Send</button>
               </div>
             </form>
-          <nav>
-            <div>
-            <h3>Service</h3>
-            <ul>
-            <li>
-              <a href="#">About us</a>
+            </div>
+          <nav class="footer__navigation">
+            <div class="footer__service">
+            <h3 class="footer_list__title">Service</h3>
+            <ul class="footer_community__list">
+            <li class="footer_service__item">
+              <a href="#" class="footer_list__link">About us</a>
             </li>
-            <li>
-              <a href="#">Careers</a>
+            <li class="footer_service__item">
+              <a href="#" class="footer_list__link">Careers</a>
             </li>
-            <li>
-              <a href="#">Terms & Conditions</a>
+            <li class="footer_service__item">
+              <a href="#" class="footer_list__link">Terms & Conditions</a>
             </li>
-            <li>
-              <a href="#">Privacy & Policy</a>
-            </li>
-          </ul>
-          </div>
-          <div>
-          <h3>Community</h3>
-          <ul>
-            <li>
-              <a href="#">Find agents</a>
-            </li>
-            <li>
-              <a href="#">Lifestyle</a>
-            </li>
-            <li>
-              <a href="#">Legal notic</a>
+            <li class="footer_service__item">
+              <a href="#" class="footer_list__link">Privacy & Policy</a>
             </li>
           </ul>
           </div>
-          <div>
-          <h3>Follow us on</h3>
-          <ul>
-            <li>
-              <a href="#">
-                  <img src="./img/Instagram_icon.svg" alt="instagram icon">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-                <img src="./img/Youtube_icon.svg" alt="youtube icon">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-                <img src="./img/facebook_icon.svg" alt="facebook icon">
-            </a>
-          </li>
-        </ul>
+          <div class="footer__community">
+          <h3 class="footer_list__title">Community</h3>
+          <ul class="footer_community__list">
+            <li class="footer_community__item">
+              <a href="#" class="footer_list__link">Find agents</a>
+            </li>
+            <li class="footer_community__item">
+              <a href="#" class="footer_list__link">Lifestyle</a>
+            </li>
+            <li class="footer_community__item">
+              <a href="#" class="footer_list__link">Legal notice</a>
+            </li>
+          </ul>
+          </div>
+          <div class="follow_us-on_div">
+          <h3 class="footer_list__title">Follow us on</h3>
+          <ul class="follow_us-on_list">
+            <li class="follow_us-on_item">
+              <a href="#" class="follow_us-on_link">
+                  <img src="./img/Instagram_icon.svg" alt="instagram icon" width="17" height="17">
+              </a>
+            </li>
+            <li class="follow_us-on_item">
+              <a href="#" class="follow_us-on_link">
+                <img src="./img/Youtube_icon.svg" alt="youtube icon" width="14" height="10">
+              </a>
+            </li>
+            <li class="follow_us-on_item">
+              <a href="#" class="follow_us-on_link">
+                <img src="./img/facebook_icon.svg" alt="facebook icon" width="17" height="17">
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
       </div>

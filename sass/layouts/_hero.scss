@@ -1,4 +1,5 @@
 @use "../utils/variables"  as *;
+@use "../utils/mixins" as *;
 
 .hero{
     background-color: $sections_bg;
@@ -13,4 +14,106 @@
 .hero__wrapper{
     position:absolute;
     top:65px;
+}
+
+@include title_style;
+@include section_info;
+
+.hero__info{
+    margin:32px 0 24px;
+    font-size: 64px;
+    line-height: 116%;
+    color: $secondTextColor;
+    width:605px;
+}
+
+.hero__text{
+    font-family: $secondFont;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #73788c;
+    width:502px;
+    margin-bottom:64px;
+}
+
+.hero_button__list{
+    display: flex;
+    align-items: center;
+}
+
+.hero_button{
+    height: 56px;
+    width:109px;
+    background-color:$sections_bg;
+    padding: 12px 32px;
+    font-family: $firstFont;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133%;
+    color: $lightGrayTextColor;
+    border:none;
+    transition: background-color 0.4s ease-out, color 0.4s ease-out;
+}
+
+.hero_button:hover {
+    background-color: #fefeff;
+    color: $hoverColor;
+}
+
+.hero_form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:751px;
+    height:124px;
+    box-shadow: 35px 35px 65px 0 rgba(146, 106, 120, 0.16);
+    background: #fefeff;
+    padding: 0 32px;
+}
+
+.location_div, .type_div, .price_div{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}   
+
+.hero_select{
+    border:none;
+}
+
+.type_label, .location_label, .price_label{
+    font-family: $firstFont;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    color: $secondTextColor;
+}
+
+.hero_select{
+    font-family: $firstFont;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    color: $lightGrayTextColor;
+}
+
+.hero_submit_button{
+    padding: 18px 48px;
+    width: 153px;
+    height: 60px;
+    box-shadow: 0 0 65px 0 rgba(105, 185, 157, 0.32);
+    background: $hoverColor;
+    font-family: $firstFont;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+    border:none;
+    transition: scale 0.4s ease-out, color 0.4s ease-out;
+}
+
+.hero_submit_button:hover{
+    scale: 1.05;
+    color: $lightGrayTextColor;
 }
