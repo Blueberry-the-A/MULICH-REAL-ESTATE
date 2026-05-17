@@ -13,19 +13,31 @@
 .property_info{
     margin-top:15px;
     margin-bottom:35px;
+
+    text-align: center;
+
+    @media screen and (max-width: 480px) {
+        display:inline-block;
+        margin:15px auto 35px;
+    }
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
 }
 
 .property-inner__wrapper{
     display: flex;
-    justify-content:space-between;
     align-items: center;
     margin-bottom:50px;
 
-    @media screen and (min-width: 480px) {
-        flex-direction: column;
-        justify-content: center;
-        gap:8px;
-        flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap:8px;
+    flex-wrap:wrap;
+
+    @media screen and (min-width: 768px) {
+        align-items:flex-start;
     }
 
     @media screen and (min-width: 1240px) {
@@ -42,10 +54,8 @@
     color: #73788c;
     width:492px;
 
-    @media screen and (min-width: 480px) {
-        width: 100%;
-        max-width: 470px;
-    }
+    width: 100%;
+    max-width: 470px;
 
     @media screen and (min-width: 1240px) {
         width: 492px;
@@ -58,22 +68,46 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap:wrap;
 
-    @media screen and (min-width: 480px) {
-        flex-direction: column;
-        gap:32px;
+    flex-direction: column;
+    gap:32px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: center;
     }
 
     @media screen and (min-width: 1240px) {
-        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
 .house_card{
     padding:20px;
     border: 1px solid #dedcda;
-    width: 376px;
+    width: 100%;
     height: 472px;
+
+    @media screen and (max-width: 480px) {
+        max-width: 320px;
+        .house_card__image{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media screen and (min-width: 481px) {
+        width: 376px;
+        .house_card__image{
+            width: 344px;
+        }
+    }
+}
+
+.house_card__image{
+    width: 100%;
+    height: auto;
 }
 
 .house_card__title{

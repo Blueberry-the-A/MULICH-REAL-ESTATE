@@ -1,4 +1,7 @@
 @use "../utils/variables"  as *;
+@use "../utils/mixins"  as *;
+
+@include title_style;
 
 .service{
     padding:216px 0 120px;
@@ -9,10 +12,29 @@
     display: flex;
     align-items: center;
     gap:56px;
+
+    flex-direction: column;
+
+    @media screen and (min-width: 1240px) {
+        flex-direction: row;
+    }
 }
 
 .service__image_wrapper{
     position: relative;
+}
+
+.service_img{
+    width: 100%;
+    height: auto;
+
+    @media screen and (max-width: 600px) {
+        max-width: 320px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 609px;
+    }
 }
 
 .about-img_wrapper{
@@ -26,6 +48,11 @@
     display:flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (max-width: 600px) {
+        scale:0.7;
+        left: 0;
+    }
 }
 
 .tick_square{
@@ -77,6 +104,12 @@
     display:flex;
     align-items: center;
     gap:32px;
+
+    @media screen and (max-width: 600px) {
+        scale:0.5;
+        bottom:-21px;
+        right:-129px;
+    }
 }
 
 .sale__list{

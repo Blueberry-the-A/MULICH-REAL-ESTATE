@@ -2,6 +2,10 @@
 
 .header{
     background-color: $sections_bg;
+    position:sticky;
+    width:100%;
+    top:0;
+    z-index: 100;
 }
 
 .header__wrapper {
@@ -9,18 +13,37 @@
   align-items: center;
   justify-content: space-between;
   padding: 32px 0;
+  @media screen and (max-width:720px){
+    flex-direction: column;
+    padding: 4px 0;
+  }
+
+  @media screen and (min-width:1200px){
+    flex-direction: row;
+  }
 }
 
 .navigation {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 8px;
+  flex-direction: column-reverse;
+
+  @media screen and (min-width:1240px){
+    flex-direction: row;
+    gap: 32px;
+  }
 }
 
 .nav-list{
     display: flex;
     align-items: center;
-    gap: 48px;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    @media screen and (min-width:768px) {
+        gap:48px;
+    }
 }
 
 .nav-list__link {
@@ -67,6 +90,7 @@
 }
 
 .sing-in__link{
+    display:block;
     font-family: $firstFont;
     font-weight: 500;
     font-size: 16px;
@@ -85,6 +109,7 @@
 }
 
 .login__link{
+    display:block;
     padding: 16px 48px 15px;
     width: 139px;
     height: 55px;

@@ -7,8 +7,26 @@
 
 .hero__image{
     position:relative;
+    width:100%;
     left: 27.5%;
     transform: translateX(27.5%);
+
+    @media screen and (max-width: 480px) {
+        width:320px;
+        height: auto;
+        left:-90px;
+        top:200px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width:700px;
+        height:auto;
+        left: -143px;
+    }
+
+    @media screen and (min-width:1240px) {
+        width:806px;
+    }
 }
 
 .hero__wrapper{
@@ -65,11 +83,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width:751px;
+    width:100%;
     height:124px;
     box-shadow: 35px 35px 65px 0 rgba(146, 106, 120, 0.16);
     background: #fefeff;
     padding: 0 32px;
+
+    @media screen and (max-width:480px){
+        flex-direction: column;
+        width:320px;
+    }
+
+    @media screen and (min-width:1240px){
+        width:751px;
+    }
 }
 
 .location_div, .type_div, .price_div{

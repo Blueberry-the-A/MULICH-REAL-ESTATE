@@ -4,27 +4,38 @@
 .footer_class{
     background-color: $sections_bg;
     padding: 75px 0 100px;
+    width:100%;
 }
 
 .footer_wrapper{
     display: flex;
     align-items: center;
-    gap:214px;
-    justify-content: center;
-
-    @media screen and (min-width: 480px) {
-        flex-direction: column;
-    }
-
-    @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    gap:80px;
+    flex-direction: column;
+    flex-wrap:wrap;
+    
+    
+    @media screen and (min-width: 768px) {
         flex-direction: row;
+        align-items: center;
     }
 
 }
 
 .footer_info__wrapper{
-    width:351px;
+    width: 100%;
+    max-width: 320px;
+
+     @media screen and (min-width: 768px) {
+        max-width: 351px;
+    }
 }
+
+.logo{
+    display: inline-block;
+}
+
 
 .footer__info{
     font-family: $firstFont;
@@ -49,6 +60,12 @@
     align-items: center;
     justify-content: flex-start;
     margin-top:16px;
+    flex-direction: column;
+
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
 }
 
 .email__input{
@@ -89,10 +106,7 @@
     align-items: flex-start;
     justify-content: space-between;
     gap:90px;
-
-    @media screen and (min-width: 480px) {
-        flex-direction: column;
-    }
+    flex-direction: column;
 
     @media screen and (min-width: 768px) {
         flex-direction: row;

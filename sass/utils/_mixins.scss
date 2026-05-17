@@ -12,6 +12,10 @@
     width: max-content;
     height: 50px;
     background-color: $titleBg;
+
+    @media screen and (max-width: 480px) {
+        max-width: 320px;
+    }
 }
 }
 
@@ -23,6 +27,11 @@
     line-height: 117%;
     letter-spacing: 0.01em;
     color: #054457;
+
+    @media screen and (max-width: 480px) {
+        max-width: 320px;
+        font-size: 32px;
+    }
 }
 }   
 
