@@ -3,6 +3,16 @@
 
 .hero{
     background-color: $sections_bg;
+    padding: 20px 0;
+
+    @media screen and (max-width:430px) {
+        padding-bottom:375px;
+    }
+
+    @media screen and (min-width:430px) {
+        padding-bottom:290px;
+    }
+
 }
 
 .hero__image{
@@ -11,27 +21,46 @@
     left: 27.5%;
     transform: translateX(27.5%);
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 430px) {
         width:320px;
         height: auto;
         left:-90px;
+        top:193px;
+    }
+
+    @media screen and (min-width: 430px) {
+        width:420px;
+        height: auto;
+        left:-123px;
         top:200px;
+    }
+
+    @media screen and (min-width: 530px) {
+        width:520px;
+        height: auto;
     }
 
     @media screen and (min-width: 768px) {
         width:700px;
         height:auto;
         left: -143px;
+        top:0;
     }
 
     @media screen and (min-width:1240px) {
         width:806px;
+        left: 27.5%;
+        transform: translateX(27.5%);
     }
 }
 
 .hero__wrapper{
     position:absolute;
     top:65px;
+
+    @media screen and (max-width:480px) {
+        width:320px;
+    }
 }
 
 @include title_style;
@@ -43,6 +72,10 @@
     line-height: 116%;
     color: $secondTextColor;
     width:605px;
+
+    @media screen and (min-width:481px) and (max-width:650px) {
+        width:480px;
+    }
 }
 
 .hero__text{
@@ -53,6 +86,14 @@
     color: #73788c;
     width:502px;
     margin-bottom:64px;
+
+    @media screen and (max-width:480px) {
+        width:320px;
+    }
+
+    @media screen and (min-width:481px) and (max-width:650px) {
+        width:480px;
+    }
 }
 
 .hero_button__list{
@@ -92,6 +133,13 @@
     @media screen and (max-width:480px){
         flex-direction: column;
         width:320px;
+        height: auto;
+    }
+
+    @media screen and (min-width:481px) and (max-width:767px){
+        flex-direction: column;
+        width:480px;
+        height: auto;
     }
 
     @media screen and (min-width:1240px){
