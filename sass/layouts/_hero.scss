@@ -6,7 +6,7 @@
     padding: 20px 0;
 
     @media screen and (max-width:430px) {
-        padding-bottom:375px;
+        padding-bottom:395px;
     }
 
     @media screen and (min-width:430px) {
@@ -26,9 +26,9 @@
     transform: translateX(27.5%);
 
     @media screen and (max-width: 430px) {
-        width:320px;
+        width:300px;
         height: auto;
-        left:-90px;
+        left:-100px;
         top:193px;
     }
 
@@ -61,9 +61,12 @@
 .hero__wrapper{
     position:absolute;
     top:65px;
+    
 
     @media screen and (max-width:480px) {
-        width:320px;
+        width:100%;
+        max-width: 300px;
+        right:0;
     }
 }
 
@@ -77,10 +80,31 @@
     color: $secondTextColor;
     width:605px;
 
+    @media screen and (max-width:480px){
+        width:100%;
+    }
+
     @media screen and (min-width:481px) and (max-width:650px) {
         width:480px;
     }
 }
+
+.hero__info {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation:typing 3s steps(40, end) forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 
 .hero__text{
     font-family: $secondFont;
@@ -92,7 +116,7 @@
     margin-bottom:64px;
 
     @media screen and (max-width:480px) {
-        width:320px;
+        width:100%;
     }
 
     @media screen and (min-width:481px) and (max-width:650px) {
@@ -103,6 +127,7 @@
 .hero_button__list{
     display: flex;
     align-items: center;
+   
 }
 
 .hero_button{
@@ -136,7 +161,8 @@
 
     @media screen and (max-width:480px){
         flex-direction: column;
-        width:320px;
+        padding: 0 10px;
+        width:80%;
         height: auto;
     }
 
@@ -190,9 +216,19 @@
     color: #fff;
     border:none;
     transition: scale 0.4s ease-out, color 0.4s ease-out;
+    transition: transform 0.2s ease-out;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
 }
 
 .hero_submit_button:hover{
     scale: 1.05;
-    color: $lightGrayTextColor;
+    color: white;
+    animation: shake 0.4s ease-out 5;
 }

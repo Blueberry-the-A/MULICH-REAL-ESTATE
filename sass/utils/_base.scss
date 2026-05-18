@@ -17,9 +17,21 @@ ul{
 
 body{
   font-family: "DM Sans", sans-serif;
-  background-color: var(--bg-color)
+  background-color: white;
+
+  transition: all 0.4s ease-out;
 }
 
 html{
   scroll-behavior: smooth;
+}
+
+body:has(#theme-toggle:checked){
+  background-color: black;
+  color:white;
+  filter: invert(1) hue-rotate(180deg);
+}
+
+body:has(#theme-toggle:checked) img{
+  filter: invert(1) hue-rotate(180deg);
 }
