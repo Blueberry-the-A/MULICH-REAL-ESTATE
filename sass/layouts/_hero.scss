@@ -78,8 +78,8 @@
     font-size: 64px;
     line-height: 116%;
     color: $secondTextColor;
-    width:605px;
-
+    width:605px; 
+    
     @media screen and (max-width:480px){
         width:100%;
     }
@@ -87,13 +87,12 @@
     @media screen and (min-width:481px) and (max-width:650px) {
         width:480px;
     }
-}
 
-.hero__info {
-  width: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  animation:typing 3s steps(40, end) forwards;
+    @media screen and (min-width:1024px){
+        animation:typing 3s steps(40, end) forwards;
+        white-space: nowrap;
+        overflow: hidden;
+    }
 }
 
 @keyframes typing {
